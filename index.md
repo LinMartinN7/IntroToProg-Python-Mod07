@@ -26,74 +26,86 @@ The first was a tutorial site hosted by DataCamp which was very thorough in expl
 The second site I found very useful was an article by Lokesh Sharma on Medium.com (What is Pickle in python?, https://medium.com/@lokeshsharma596/what-is-pickle-in-python-3d9f261498b4, 2021)(External Site). This article discussed pickling from a high-level overview that was less in-depth than the first article. I appreciated this because it helped me understand pickling in a plain talk manner. The article also had an example provided demonstrating how to pickle and unpickle data. These completed script examples of how to pickle and unpickle data made the concept easier to understand for me.
 
 ![W3_Picture_Sample](https://user-images.githubusercontent.com/84411887/130553072-8bc4eef1-0794-4d85-8c9a-345304922469.JPG)
+
 _**Figure 01: Sample of pickling and unpickling data from Lokesh Sharma’s article on pickling. (What is Pickle in python?, https://medium.com/@lokeshsharma596/what-is-pickle-in-python-3d9f261498b4, 2021)(External Site)**_
 
 ## Creating a GitHub Site
 For Assignment 07, our class was tasked with creating a new GitHub repository to store the files for this weeks’ coursework, as well as creating a GitHub website to display our written paper. To get started, I created a new repository on my GitHub account with the IntroToProg-Python-Mod07 name.
 
 ![GitHub_Repository_Creation](https://user-images.githubusercontent.com/84411887/130553757-c5f9d5c2-204a-4d98-9594-da5ed2b6ff56.JPG)
+
 _**Figure 02: Creating new GitHub repository for Module 07’s coursework.**_
 
 Next, I created a docs folder and index.md page to serve as my GitHub site for displaying my written paper. I added some of my work in progress for the Assignment 07 write up document so the page could populate with some information. Due to having used GitHub in a previous course to create webpages, formatting the text felt fairly familiar. 
 
- 
-_**Figure 03: Creating a GitHub site to post Assignment 07’s paper. **_
+![03](https://user-images.githubusercontent.com/84411887/130727589-bc738372-2eab-48ec-9e7d-2ad994137a92.JPG)
+
+_**Figure 03: Creating a GitHub site to post Assignment 07’s paper.**_
 
 I made a note to save screenshots of the images used in my written document so they could be uploaded onto the GitHub site once those sections of the paper were completed. The drag and drop feature within GitHub for uploading images stored on PCs is very useful. 
 
 Once I had enough sample text on the site, I saved the file and went into the settings for my repository. I accessed the page menu and changed the theme of the page. After waiting several minutes, I verified that the theme had taken on my GitHub site and that my document was shown correctly on the page.
 
-INSERT SCREENSHOT OF PAGE HERE
+![04](https://user-images.githubusercontent.com/84411887/130727600-7552b58e-9f27-467c-81dd-4f7f719a3218.JPG)
+
 _**Figure 04: Creating a GitHub site to post Assignment 07’s paper.**_
-
-
 
 ## Creating the Python Script
 For this assignment, we were tasked with creating a script in Python that would use pickling and exception handling. I decided to create a script that would capture gift ideas for Yule, given that we are drawing closer to winter and I like to pre-plan my holiday gift giving. 
 
 Like previous assignments, I created a header for the document and updated it as I worked on this script.
 
- 
+![05](https://user-images.githubusercontent.com/84411887/130727617-faaa88d0-9899-413a-9f80-1cfcff83fd14.JPG)
+
 _**Figure 05: Script header in PyCharm.**_
 
 Next, I declared the variables used in the file and added a section to read the data from an existing file called YuleGifts.txt. This file serves as the base file for the script and gift list so the user can use it repeatedly. At this point in the script, I decided to add an exception handling clause in the event that the YuleGifts.txt file could not be located.
 
- 
+![06](https://user-images.githubusercontent.com/84411887/130727630-45e2c432-2ab3-42db-8270-41976769536d.JPG)
+
 _**Figure 06: Loading data from YuleGifts.txt with exception handling clause.**_
 
 The rest of the file worked similarly to some of the previous assignments we were tasked with. I created a menu with multiple prompts for the user to select from and added code that performed each function in the list.
 
- 
+![07](https://user-images.githubusercontent.com/84411887/130727649-aec1e893-b181-42f5-b591-09cc50e47883.JPG)
+
 _**Figure 07: Yule Gift Idea Menu being tested in PyCharm.**_
 
 I attempted to add another exception handle parameter in the script for adding a new gift. I was unsuccessful to get it to function correctly but wanted to keep it included in the script. I would like to go back and get this once I have a better understanding of where I went wrong with the exception handling function.
 
- 
+![08](https://user-images.githubusercontent.com/84411887/130727657-49e42c8d-2424-4979-b8ac-d2a279b8f50f.JPG)
+
 _**Figure 08: Adding New Gift script in PyCharm where exception handling failed to work correctly.**_
 
 I continued creating the script without any other exception handling statements, instead redirecting my focus to the pickling menu options I had created in the list. I had two different options referring to pickling, #5 Pickle Data and #6 View Pickled Data (Figure__). I finished the script with an option to close the file.
 
- 	 
+![09](https://user-images.githubusercontent.com/84411887/130727691-1226ee87-9df8-4c82-9114-176930b5f62b.JPG)
+
 _**Figure 09: Python script for pickling data and viewing pickled data.**_
 
 ## Testing the Python Script
 Once my script was created, I knew I needed to test it in PyCharm and in Windows Command Prompt. I had been testing the script repeatedly in PyCharm while I had been writing statements, so I was confident in its performance there. I tested the script in Command Prompt and immediately noticed that my first exception handling clause was working because I got an error that the file could not be located. This felt like a huge success for me due to my inability to get my second exception handling clause to work in the new gift creation option.
 
- 
+![10](https://user-images.githubusercontent.com/84411887/130727694-8d7e7a50-d9cf-48cf-a624-4323eefb27fa.JPG)
+
 _**Figure 10: Exception handling working in Windows Command Prompt.**_
 
 I proceeded with testing the file, adding multiple recipients and gifts to the Yule Gift Ideas List. I confirmed that a new YuleGifts.txt file was created in my profile on the PC when I selected the prompt to save the list.
 
- 	 
+![11](https://user-images.githubusercontent.com/84411887/130727707-6e1c040b-410a-4dfe-b74e-ebba4647d2b4.JPG)
+
 _**Figure 11: Successful creation of recipients in Python script, generating a text file once the prompt to save was selected.**_
 
 Next, I wanted to verify that a pickled file of data would be created by the script. I selected #5 Pickle Data and immediately got an error that I had not received while testing in PyCharm. I went back to the code and realized I forgot to add import pickle to the beginning of the code for the #5 Pickle Data section. I immediately fixed the error and re-ran the code, getting a successful pickling confirmation. I verified that the file had been created on my C Drive as well.
+
+![12](https://user-images.githubusercontent.com/84411887/130728139-3bcc04d4-9ec0-4f45-8285-a0c1112ba6e5.JPG)
 
 _**Figure 12: Successful pickling of the Yule Gift List script.**_
 
 When selecting the option to view the pickled data in command prompt, all entries appeared correctly (Figure 13). With this, I was ready to turn the assignment in.
 
- 
+![13](https://user-images.githubusercontent.com/84411887/130728150-763f82dd-3a70-40ed-ada7-7391915c538d.JPG)
+
 _**Figure 13: Successful reading of pickled data in the Yule Gift List.**_
 
 ## Summary
